@@ -1,0 +1,11 @@
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.{ts,tsx}": [
+      "@parcel/transformer-babel"
+    ]
+  }
+}
+
+*
+   after .header{background-color:none;color:#fff}[data-position="top center"][data-tooltip]:after{top:auto;right:auto;left:50%;bottom:100%

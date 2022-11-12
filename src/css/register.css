@@ -1,0 +1,129 @@
+.register-image {
+  background-image: url(../images/location.jpg);
+  background-position: center bottom;
+}
+
+/* most of the time you’ll want to override the 
+default input styles (which is quite a lot of stuff) */
+input {
+  border: none;
+  line-height: 1.5;
+  font-size: 16px;
+  height: 48px;
+  width: 100%;
+  padding: 0 12px;
+  outline: none;
+  color: #32325d;
+}
+
+input::placeholder {
+  color: #aab7c4;
+}
+
+.bg-orange {
+  /* we overwrite the default tachyons bg-orange class */
+  background-color: #ffe6dd;
+}
+
+.register {
+  /* using css grid to stack the child boxes on top of each other*/
+  display: grid;
+  place-items: center;
+  /* chop off the edges of the box when our front element slides out */
+  overflow: hidden;
+}
+
+/* so our boxes stack on top of each other */
+.front,
+.back {
+  grid-area: 1/1;
+}
+
+/*  we add a transition to the transform property */
+.front {
+  transition: transform 0.5s ease;
+}
+
+/* we toggle this class using javascript */
+.front.slide-up {
+  transform: translateY(-100%);
+}
+
+/* here we show a pointer cursor so the user knows they can click the button */
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--orange);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  padding: 24px 72px;
+  font-family: "HK-Grotesk-Bold", sans-serif;
+}
+
+.button-small {
+  font-size: 14px;
+  padding: 12px 20px;
+}
+
+.button-outline {
+  background-color: transparent;
+  border: solid 2px var(--orange);
+  color: var(--orange);
+}
+
+.StripeElement {
+  background-color: #fff;
+  padding: 12px;
+}
+
+/* here we lock the form when it’s submitting */
+.form-fields {
+  transition: opacity 0.5s ease;
+}
+
+.processing .form-fields {
+  opacity: 0.5;
+  /* disabled interaction with the form when it’s submitting */
+  pointer-events: none;
+}
+
+/* taken from http://tobiasahlin.com/spinkit/ */
+.spinner {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  background-color: var(--orange);
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  z-index: 10;
+  box-shadow: 0 0 11px 0px rgb(254, 145, 127);
+}
+
+/* show the spinner when the form is processing */
+.processing .spinner {
+  opacity: 1;
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}

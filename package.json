@@ -1,0 +1,23 @@
+{
+  "name": "good-times",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.0",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "basscss": "^8.0.2",
+    "in-view": "^0.6.1",
+    "tachyons": "^4.12.0",
+    "vanilla-tilt": "^1.7.3"
+  }
+}
