@@ -1,0 +1,15 @@
+.speaker-image {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.speaker-name,
+.speaker-title {
+  margin: 0;
+  line-height: 1.33;
+}
+
+.speaker-title {
+  color: #979797;
+  font-family: "HK-Grotesk-Regular", sans-serif;
+}

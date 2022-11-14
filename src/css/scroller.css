@@ -1,0 +1,42 @@
+.schedule-container {
+  border: solid 3px var(--orange);
+  /* This gives us natural scrolling behaviour on mobiles or touch screens */
+  -webkit-overflow-scrolling: touch;
+}
+
+.schedule-container::-webkit-scrollbar {
+  width: 12px;
+  height: 14px;
+  background-color: transparent;
+}
+
+.schedule-container::-webkit-scrollbar-thumb {
+  background-color: var(--orange);
+  border: solid 2px #fff;
+}
+
+.schedule {
+  padding: 48px 24px;
+}
+
+.schedule-time {
+  color: var(--orange);
+  font-size: 36px;
+  font-family: "HK-Grotesk-Bold", san-serif;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.schedule-day {
+  /* Languages like Japanese sometimes have a vertical writing style
+  Here we can change the text orientation to sideways */
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  /* We then rotate the text to flip it over */
+  transform: rotate(180deg);
+  padding: 24px;
+  color: #fff;
+  background-color: var(--orange);
+  line-height: 1;
+  text-align: center;
+}
