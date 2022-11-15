@@ -9,8 +9,8 @@
 
 .nav-link {
   color: #fff;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .header-desktop {
@@ -31,7 +31,6 @@
 .logo-svg polygon {
   fill: #fff;
 }
-
 
 .header-desktop {
   background-color: #fff;

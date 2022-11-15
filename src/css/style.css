@@ -1,19 +1,22 @@
-/* we declare our variable inside a :root selector */
 :root {
-  /* give the variable a name and value (needs two -- in front) */
-  --orange: #ff3c15;
+  --orange: #f33c15;
+  --breakpoint-1: 840px;
+  --medium-font: "HK-Grotesk-Medium", sans-serif;
 }
 
 body {
-  font-family: "HK-Grotesk-Medium", sans-serif;
+  font-family: var(--medium-font);
   font-size: 18px;
   line-height: 1.5;
   color: #414141;
-
-  background-image: url(../images/background.jpg);
+  background-image: url("../images/background.jpg");
   background-size: 100% auto;
   background-position: center top;
   background-repeat: no-repeat;
+}
+
+body div {
+  font-family: var(--medium-font);
 }
 
 a {
@@ -38,6 +41,19 @@ a {
   color: var(--orange);
 }
 
+.button {
+  display: inline-block;
+  background-color: var(--orange);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  padding: 24px 72px;
+  font-family: "HK-Grotesk-Bold", sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+
 .container {
   max-width: 1080px;
   margin-left: auto;
@@ -46,7 +62,7 @@ a {
   padding-right: 2rem;
 }
 
-blockquote {
+div blockquote {
   color: var(--orange);
   font-size: 36px;
 }
@@ -60,65 +76,6 @@ blockquote {
   border: solid 3px var(--orange);
   text-transform: uppercase;
   margin-top: 12px;
-}
-
-.speaker-image {
-  display: block;
-  margin-bottom: 12px;
-}
-
-.speaker-name,
-.speaker-title {
-  margin: 0;
-  line-height: 1.33;
-}
-
-.speaker-title {
-  color: #979797;
-  font-family: "HK-Grotesk-Regular", sans-serif;
-}
-
-.schedule-container {
-  border: solid 3px var(--orange);
-  /* this gives us natural scrolling behaviour on touch screens */
-  -webkit-overflow-scrolling: touch;
-}
-
-.schedule-container::-webkit-scrollbar {
-  width: 12px;
-  height: 14px;
-  background-color: transparent;
-}
-
-.schedule-container::-webkit-scrollbar-thumb {
-  background-color: var(--orange);
-  border: solid 2px #fff;
-}
-
-.schedule {
-  padding: 48px 24px;
-}
-
-.schedule-time {
-  color: var(--orange);
-  font-size: 36px;
-  font-family: "HK-Grotesk-Bold", sans-serif;
-  line-height: 1;
-  margin-bottom: 8px;
-}
-
-.schedule-day {
-  /* languages like japanese sometimes have a vertical writing style */
-  writing-mode: vertical-rl;
-  /* we can change the text orientation to sideways */
-  text-orientation: sideways;
-  /* then we rotate the text to flip it over */
-  transform: rotate(180deg);
-  padding: 24px;
-  color: #fff;
-  line-height: 1;
-  background-color: var(--orange);
-  text-align: center;
 }
 
 .footer {
@@ -156,7 +113,7 @@ blockquote {
   .heading-orange {
     margin-bottom: 24px;
   }
-  blockquote {
+  blockquote div {
     line-height: 1.2;
   }
   .schedule-day {
