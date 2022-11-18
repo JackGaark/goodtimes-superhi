@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "HK-Grotesk-Bold";
+  font-family: "hk-grotesk-bold";
   src: url("../fonts/hkgrotesk-bold.eot") format("eot"),
     url("../fonts/hkgrotesk-bold.woff") format("woff"),
     url("../fonts/hkgrotesk-Bold.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "HK-Grotesk-Medium";
+  font-family: "hk-grotesk-medium";
   src: url("../fonts/hkgrotesk-medium.eot") format("eot"),
     url("../fonts/hkgrotesk-medium.woff") format("woff"),
     url("../fonts/hkgrotesk-medium.woff2") format("woff2");
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "HK-Grotesk-Regular";
+  font-family: "hk-grotesk-regular";
   src: url("../fonts/hkgrotesk-regular.eot") format("eot"),
     url("../fonts/hkgrotesk-regular.woff") format("woff"),
     url("../fonts/hkgrotesk-regular.woff2") format("woff2");
