@@ -2,7 +2,7 @@
   "name": "good-times",
   "version": "1.0.0",
   "description": "",
-  "main": "js/index.js",
+  "main": "src/js/index.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
