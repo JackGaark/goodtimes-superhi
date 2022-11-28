@@ -155,7 +155,7 @@ a:focus-visible {
 
 main {
   padding: 1.5rem 0.5rem 3rem;
-  height: 100vh;
+  height: 60vh;
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas: "frame" "content";

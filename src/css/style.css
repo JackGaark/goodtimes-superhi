@@ -62,6 +62,15 @@ a {
   padding-right: 2rem;
 }
 
+.wrapper {
+  background-color: #535fcf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;
+  top: 2000px;
+}
+
 div blockquote {
   color: var(--orange);
   font-size: 36px;
