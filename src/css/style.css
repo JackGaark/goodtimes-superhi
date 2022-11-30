@@ -1,5 +1,5 @@
 :root {
-  --orange: #f33c15;
+  --black: #414141;
   --breakpoint-1: 840px;
   --medium-font: "HK-Grotesk-Medium", sans-serif;
 }
@@ -25,20 +25,20 @@ a {
 }
 
 .heading {
-  color: #fff;
+  color: #414141;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #414141;
   font-family: "HK-Grotesk-Bold", sans-serif;
   font-size: 110px;
   line-height: 1;
 }
 
-.heading-orange {
+.heading-black {
   font-size: 120px;
-  -webkit-text-stroke-color: var(--orange);
+  -webkit-text-stroke-color: var(--black);
   margin-bottom: 3rem;
-  color: var(--orange);
+  color: var(--black);
 }
 
 .button {
@@ -71,13 +71,13 @@ a {
 }
 
 div blockquote {
-  color: var(--orange);
+  color: var(--black);
   font-size: 36px;
 }
 
 .cite {
   display: inline-block;
-  color: var(--orange);
+  color: var(--black);
   line-height: 1;
   padding: 24px 18px;
   border-radius: 100%;
@@ -118,7 +118,7 @@ div blockquote {
     padding: 18px 32px;
     font-size: 16px;
   }
-  .heading-orange {
+  .heading-black {
     margin-bottom: 24px;
   }
   blockquote div {
