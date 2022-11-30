@@ -31,6 +31,9 @@ registerButton.addEventListener("click", (event) => {
   frontEl.classList.add("slide-up");
 });
 
+const prev = document.querySelector(".preview");
+alert(prev);
+
 const stripe = Stripe("pk_test_cucWEL0zZ0Ttl8sDgYcAdeD6");
 
 // Set up Stripe.js and Elements to use in checkout form

@@ -43,4 +43,3 @@ export class Preview {
       this.multiLines.push(new TextLinesReveal(line))
     );
   }
-}
