@@ -24,6 +24,10 @@ a {
   color: #414141;
 }
 
+.scrollable {
+  overflow-y: scroll;
+}
+
 .heading {
   color: #414141;
   -webkit-text-fill-color: transparent;
@@ -81,7 +85,7 @@ div blockquote {
   line-height: 1;
   padding: 24px 18px;
   border-radius: 100%;
-  border: solid 3px var(--orange);
+  border: solid 3px var(--black);
   text-transform: uppercase;
   margin-top: 12px;
 }

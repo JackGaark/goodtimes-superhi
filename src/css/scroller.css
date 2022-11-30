@@ -1,5 +1,5 @@
 .schedule-container {
-  border: solid 3px var(--orange);
+  border: solid 3px var(--black);
   /* This gives us natural scrolling behaviour on mobiles or touch screens */
   -webkit-overflow-scrolling: touch;
 }

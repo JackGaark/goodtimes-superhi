@@ -203,3 +203,19 @@ for (const item of items) {
   // Closes the item preview
   item.preview.DOM.backCtrl.addEventListener("click", () => closeItem(item));
 }
+
+//prevent scrolling
+function preventScroll(e) {
+  e.preventDefault();
+  e.stopPropagation();
+
+  return false;
+}
+
+function disable() {
+  document
+    .querySelector(".scrollable")
+    .addEventListener("wheel", preventScroll);
+}
+
+disable();
