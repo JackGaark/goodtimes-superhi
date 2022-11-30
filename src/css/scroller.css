@@ -39,4 +39,6 @@
   background-color: var(--black);
   line-height: 1;
   text-align: center;
+  position: relative;
+  z-index: -1000;
 }
