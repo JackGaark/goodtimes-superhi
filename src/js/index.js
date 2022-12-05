@@ -213,9 +213,10 @@ function preventScroll(e) {
 }
 
 function disable() {
-  document
-    .querySelector(".scrollable")
-    .addEventListener("wheel", preventScroll);
+  const elements = document.querySelectorAll(".scrollable");
+  for (let element of elements) {
+    element.addEventListener("wheel", preventScroll);
+  }
 }
 
 disable();
