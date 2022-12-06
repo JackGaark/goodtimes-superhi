@@ -2,20 +2,22 @@
   "name": "good-times",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.8.0",
-    "parcel-bundler": "^1.12.5"
+    "vite": "^3.2.3"
   },
   "dependencies": {
-    "basscss": "^8.0.2",
+    "animejs": "^3.2.1",
+    "basscss": "8.0.2",
+    "basscss-grid": "^2.0.0",
     "gsap": "^3.11.3",
     "imagesloaded": "^5.0.0",
     "in-view": "^0.6.1",
