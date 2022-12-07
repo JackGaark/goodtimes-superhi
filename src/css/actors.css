@@ -249,10 +249,10 @@ main {
   height: 100%;
 }
 
-/* .item__desc {
+.item__desc {
   margin-top: 2.5rem;
   line-height: 1.1;
-} */
+}
 
 .item__link {
   cursor: pointer;
