@@ -25,11 +25,12 @@
 .logo-svg {
   width: 236px;
   height: 72px;
+  color: #414141;
 }
 
 .logo-svg path,
 .logo-svg polygon {
-  fill: #fff;
+  fill: #414141;
 }
 
 .header-desktop {
