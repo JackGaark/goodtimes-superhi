@@ -6,12 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build-try": "vite build --ssr handler.js",
+    "build:demo": "npm run build:client && npm run build:ssr",
+    "build:client": "vite build",
+    "build:ssr": "vite build --ssr handler.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@netlify/vite-plugin-netlify-edge": "^1.1.1",
     "vite": "^3.2.3"
   },
   "dependencies": {
