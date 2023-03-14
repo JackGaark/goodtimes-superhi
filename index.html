@@ -80,6 +80,9 @@
               <a class="nav-link" href="#schedule">Theater</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#reel">Reel</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#register">Representation</a>
             </li>
             <!-- <li class="nav-item">
@@ -429,48 +432,79 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap justify-between pt5-ns mb4 mb5-ns">
-         
-        </div>
+             <div class="container">
+              <div class="mb4 mb5-ns fade" id="reel">
+                <h1 class="heading heading-orange">Reel</h1>
+                  <video
+                    width="100%"
+                    muted="true"
+                    autoplay="true"
+                    src="https://res.cloudinary.com/dzzdoq1bq/video/upload/v1678492476/Ansa/Ansa_Akyea_Acting_Reel_Generated.mp4"
+                  ></video>
+              </div>
+            </div>
 
-        <video width="100%" muted="true" autoplay="true" src="https://res.cloudinary.com/dzzdoq1bq/video/upload/v1678492476/Ansa/Ansa_Akyea_Acting_Reel_Generated.mp4"></video>
+          <div id="register">
+            <h1 class="heading heading-orange">Representation</h1>
 
-        <div id="register">
-          <h1 class="heading heading-orange">
-            Representation
-          </h1>
-
-    <div class="flex flex-wrap mb4 mb5-ns">
-      <div class="col-12 sm-col-6 cover register-image"></div>
-      <div class="col-12 sm-col-6 register relative bg-black black">
-        <div class="front location flex flex-wrap pa4 items-center bg-black relative z-2 col-12">
-          <p class="mt0 mb4 col-12">Manager
-            <br> Manager- SMS Talent- https://smstalent.com
-          </p>
-          <p class="mt0 mb4 col-12">Agents
-            <br>  Moore Creative- https://www.mooretalent.com
-            Shirley Hamilton- https://www.shirleyhamiltontalent.com
-            Lori Lins Limited- https://www.lorilins.com
-          </p>
-          <button class="button button-small button-outline register-button">Representation</button>
-        </div>
-        <form action="https://api.superhi.com/api/test/orders" class="back form z-1 pa4 col-12" id="payment-form">
-          <div class="spinner"></div>
-          <h3 class='mt0 mb2 form-title'>Your details</h3>
-          <div class='form-fields'>
-            <!-- the required attribute makes the form unable to submit unless the fields are filled -->
-            <input name="name" class="mb2 db" placeholder="Name" id="name" required>
-            <input name="email" class="mb2 db" placeholder="Email" id="email" required type="email">
-            <div id="card-element" class="mb2"></div>
-            <div id="card-errors" role="alert"></div>
-            <div class="pt2">
-              <button class="button button-small">Buy ticket for $100 AUD</button>
+            <div class="flex flex-wrap mb4 mb5-ns">
+              <div class="col-12 sm-col-6 cover register-image"></div>
+              <div class="col-12 sm-col-6 register relative bg-black black">
+                <div
+                  class="front location flex flex-wrap pa4 items-center bg-black relative z-2 col-12"
+                >
+                  <p class="mt0 mb4 col-12">
+                    Manager <br />
+                    Manager- SMS Talent- https://smstalent.com
+                  </p>
+                  <p class="mt0 mb4 col-12">
+                    Agents <br />
+                    Moore Creative- https://www.mooretalent.com Shirley
+                    Hamilton- https://www.shirleyhamiltontalent.com Lori Lins
+                    Limited- https://www.lorilins.com
+                  </p>
+                  <button
+                    class="button button-small button-outline register-button"
+                  >
+                    Representation
+                  </button>
+                </div>
+                <form
+                  action="https://api.superhi.com/api/test/orders"
+                  class="back form z-1 pa4 col-12"
+                  id="payment-form"
+                >
+                  <div class="spinner"></div>
+                  <h3 class="mt0 mb2 form-title">Your details</h3>
+                  <div class="form-fields">
+                    <!-- the required attribute makes the form unable to submit unless the fields are filled -->
+                    <input
+                      name="name"
+                      class="mb2 db"
+                      placeholder="Name"
+                      id="name"
+                      required
+                    />
+                    <input
+                      name="email"
+                      class="mb2 db"
+                      placeholder="Email"
+                      id="email"
+                      required
+                      type="email"
+                    />
+                    <div id="card-element" class="mb2"></div>
+                    <div id="card-errors" role="alert"></div>
+                    <div class="pt2">
+                      <button class="button button-small">
+                        Buy ticket for $100 AUD
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
-        </form>
-      </div>
-    </div>
-  </div>
         </div>
       </div>
     </div>
