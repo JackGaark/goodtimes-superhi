@@ -1,0 +1,27 @@
+.reel {
+  padding: 48px 24px;
+}
+
+.speaker-image {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.reel-container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.reel-name,
+.reel-title {
+  margin: 0;
+  line-height: 1.33;
+}
+
+.reel-title {
+  color: #979797;
+  font-family: "HK-Grotesk-Regular", sans-serif;
+}

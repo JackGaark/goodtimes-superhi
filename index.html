@@ -135,6 +135,32 @@
         </div>
       </div>
 
+
+      <div class="video-wrap">
+        <div class="video-inner">
+          <video class="video-player" src="https://res.cloudinary.com/dzzdoq1bq/video/upload/v1678492476/Ansa/Ansa_Akyea_Acting_Reel_Generated.mp4" poster="media/woods.jpg" preload="auto">
+            <!-- <source src="media/woods.webm" type='video/webm; codecs="vp8.0, vorbis"'>
+            <source src="media/woods.ogg" type='video/ogg; codecs="theora, vorbis"'> -->
+            <source src="https://res.cloudinary.com/dzzdoq1bq/video/upload/v1678492476/Ansa/Ansa_Akyea_Acting_Reel_Generated.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+            <p>Sorry, but your browser does not support this video format.</p>
+          </video>
+          <button class="action action--close">
+            <i class="fa fa-close"></i>
+            <span class="action__label action__label--hidden">Close preview</span>
+          </button>
+        </div><!-- /video-inner-->
+      </div><!-- /video-wrap-->
+
+      <div class="content">
+        <div class="loader">
+          <i class="fa fa-spinner fa-pulse"></i>
+        </div>
+        <button class="action action--hidden action--play">
+          <i class="fa fa-play"></i><span class="action__label">Watch the video</span>
+        </button>
+      </div>
+
+
       <div class="speakers mb4 mb5-ns fade speakers-container" id="speakers">
         <h1 class="heading heading-orange">Acting</h1>
         <div>
@@ -431,16 +457,17 @@
             </div>
           </div>
         </div>
-
-             <div class="container">
-              <div class="mb4 mb5-ns fade" id="reel">
-                <h1 class="heading heading-orange">Reel</h1>
+        <div class="container">
+            <div class="speakers mb4 mb5-ns fade speakers-container" id="speakers">
+                <div class="flex flex-wrap mb4 mb5-ns fade" id="reel">
+                  <h1 class="heading heading-orange">Reel</h1>
                   <video
-                    width="100%"
-                    muted="true"
-                    autoplay="true"
-                    src="https://res.cloudinary.com/dzzdoq1bq/video/upload/v1678492476/Ansa/Ansa_Akyea_Acting_Reel_Generated.mp4"
+                  width="100%"
+                  muted="true"
+                  autoplay="true"
+                  src="https://res.cloudinary.com/dzzdoq1bq/video/upload/v1678492476/Ansa/Ansa_Akyea_Acting_Reel_Generated.mp4"
                   ></video>
+                </div>
               </div>
             </div>
 
@@ -506,7 +533,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     </div>
     <footer class="footer pv3 pv5-ns">
       <div class="container flex justify-between items-center">
