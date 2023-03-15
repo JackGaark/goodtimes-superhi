@@ -65,11 +65,12 @@ registerButton.addEventListener("click", (event) => {
   function initEvents() {
     playCtrl.addEventListener("click", play);
     closeCtrl.addEventListener("click", hide);
-    videoEl.addEventListener("canplaythrough", allowPlay);
+    videoEl.addEventListener("canplay", allowPlay);
     videoEl.addEventListener("ended", hide);
   }
 
   function allowPlay() {
+    console.log("Hello");
     classie.add(bodyEl, "video-loaded");
   }
 
