@@ -159,6 +159,11 @@ div blockquote {
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
+.loader svg {
+  animation: spin 2s linear infinite;
+  height: 120px;
+  width: 120px;
+}
 
 .video-loaded .loader {
   opacity: 0;
@@ -208,6 +213,16 @@ div blockquote {
   opacity: 1;
   pointer-events: auto;
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .action--close {
   display: flex;
   justify-content: center;

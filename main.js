@@ -37,15 +37,15 @@ inView(".fade")
   .on("enter", (img) => img.classList.add("visible"))
   .on("exit", (img) => img.classList.remove("visible"));
 
-// 1. when we click the .register-button, run a function
-// 2. grab the .front element and add a class of .slide-up
-const registerButton = document.querySelector(".register-button");
-registerButton.addEventListener("click", (event) => {
-  // stops any default actions from happening
-  event.preventDefault();
-  const frontEl = document.querySelector(".front");
-  frontEl.classList.add("slide-up");
-});
+// // 1. when we click the .register-button, run a function
+// // 2. grab the .front element and add a class of .slide-up
+// const registerButton = document.querySelector(".register-button");
+// registerButton.addEventListener("click", (event) => {
+//   // stops any default actions from happening
+//   event.preventDefault();
+//   const frontEl = document.querySelector(".front");
+//   frontEl.classList.add("slide-up");
+// });
 
 // //js video control behavior
 
@@ -63,6 +63,7 @@ registerButton.addEventListener("click", (event) => {
   }
 
   function initEvents() {
+    console.log("Hello2");
     playCtrl.addEventListener("click", play);
     closeCtrl.addEventListener("click", hide);
     videoEl.addEventListener("canplay", allowPlay);
