@@ -25,12 +25,13 @@ input::placeholder {
   background-color: #ffe6dd;
 }
 
-.register {
+.contact {
   /* using css grid to stack the child boxes on top of each other*/
   display: grid;
   place-items: center;
   /* chop off the edges of the box when our front element slides out */
   overflow: hidden;
+  font-size: 18px;
 }
 
 /* so our boxes stack on top of each other */
