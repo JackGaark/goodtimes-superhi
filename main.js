@@ -13,7 +13,6 @@ import "./src/css/speakers.css";
 import "./src/css/scroller.css";
 import "./src/css/reel.css";
 import "./src/css/contact.css";
-import "./classie.js";
 
 // Grab our header and desktop header
 // Insert the contents of our header into the document one
@@ -73,21 +72,22 @@ inView(".fade")
 
   function allowPlay() {
     console.log("Hello");
-    classie.add(bodyEl, "video-loaded");
+    bodyEl.classList.add("video-loaded");
   }
 
   function play() {
     videoEl.currentTime = 0;
-    classie.remove(videoWrap, "video-wrap--hide");
-    classie.add(videoWrap, "video-wrap--show");
+    videoWrap.classList.remove("video-wrap--hide");
+
+    videoWrap.classList.add("video-wrap--show");
     setTimeout(function () {
       videoEl.play();
     }, 600);
   }
 
   function hide() {
-    classie.remove(videoWrap, "video-wrap--show");
-    classie.add(videoWrap, "video-wrap--hide");
+    videoWrap.classList.remove("video-wrap--show");
+    videoWrap.classList.add("video-wrap--hide");
     videoEl.pause();
   }
 
