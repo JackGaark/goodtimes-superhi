@@ -13,6 +13,7 @@ import "./src/css/speakers.css";
 import "./src/css/scroller.css";
 import "./src/css/reel.css";
 import "./src/css/contact.css";
+import "./classie.js";
 
 // Grab our header and desktop header
 // Insert the contents of our header into the document one
