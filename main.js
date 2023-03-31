@@ -1,7 +1,7 @@
 import anime from "animejs/lib/anime.es.js";
 import inView from "in-view";
-import "./src/js/tilt.js";
-import "./src/js/index";
+// import "./src/js/tilt.js";
+// import "./src/js/index";
 import "./src/css/actors.css";
 import "./src/css/style.css";
 import "./src/css/a-tachyons.css";
