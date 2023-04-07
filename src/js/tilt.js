@@ -1,4 +1,4 @@
-var VanillaTilt = (function () {
+export const VanillaTilt = (function () {
   "use strict";
   class t {
     constructor(t, e = {}) {

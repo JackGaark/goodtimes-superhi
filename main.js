@@ -1,6 +1,6 @@
 import anime from "animejs/lib/anime.es.js";
 import inView from "in-view";
-// import "./src/js/tilt.js";
+import "./src/js/tilt.js";
 // import "./src/js/index";
 import "./src/css/actors.css";
 import "./src/css/style.css";
@@ -49,50 +49,42 @@ inView(".fade")
 
 // //js video control behavior
 
-(function () {
-  "use strict";
+var bodyEl = document.body,
+  videoWrap = document.querySelector(".video-wrap"),
+  videoEl = videoWrap.querySelector("video"),
+  playCtrl = document.querySelector(".action--play"),
+  closeCtrl = document.querySelector(".action--close");
 
-  var bodyEl = document.body,
-    videoWrap = document.querySelector(".video-wrap"),
-    videoEl = videoWrap.querySelector("video"),
-    playCtrl = document.querySelector(".action--play"),
-    closeCtrl = document.querySelector(".action--close");
+function init() {
+  console.log("Hello2");
+  playCtrl.addEventListener("click", play);
+  closeCtrl.addEventListener("click", hide);
+  videoEl.addEventListener("canplay", allowPlay);
+  videoEl.addEventListener("ended", hide);
+}
 
-  function init() {
-    initEvents();
-  }
+function allowPlay() {
+  console.log("Hello");
+  bodyEl.classList.add("video-loaded");
+}
 
-  function initEvents() {
-    console.log("Hello2");
-    playCtrl.addEventListener("click", play);
-    closeCtrl.addEventListener("click", hide);
-    videoEl.addEventListener("canplay", allowPlay);
-    videoEl.addEventListener("ended", hide);
-  }
+function play() {
+  videoEl.currentTime = 0;
+  videoWrap.classList.remove("video-wrap--hide");
 
-  function allowPlay() {
-    console.log("Hello");
-    bodyEl.classList.add("video-loaded");
-  }
+  videoWrap.classList.add("video-wrap--show");
+  setTimeout(function () {
+    videoEl.play();
+  }, 600);
+}
 
-  function play() {
-    videoEl.currentTime = 0;
-    videoWrap.classList.remove("video-wrap--hide");
+function hide() {
+  videoWrap.classList.remove("video-wrap--show");
+  videoWrap.classList.add("video-wrap--hide");
+  videoEl.pause();
+}
 
-    videoWrap.classList.add("video-wrap--show");
-    setTimeout(function () {
-      videoEl.play();
-    }, 600);
-  }
-
-  function hide() {
-    videoWrap.classList.remove("video-wrap--show");
-    videoWrap.classList.add("video-wrap--hide");
-    videoEl.pause();
-  }
-
-  init();
-})();
+init();
 
 // grab all the anchor tags on the page
 const anchors = document.querySelectorAll("a");
