@@ -119,6 +119,11 @@ a:hover {
   color: var(--color-link-hover-alt);
 }
 
+.changeColorText {
+  color: #ff6300;
+  font-size: 18px;
+}
+
 /* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
 a:focus {
   /* Provide a fallback style for browsers
