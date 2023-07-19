@@ -231,7 +231,7 @@ main {
 .item__title {
   font-family: HK-Grotesk-Bold, sans-serif;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
@@ -250,8 +250,12 @@ main {
 }
 
 .item__desc {
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
   line-height: 1.1;
+  font-size: 0.9em;
+  /* font-style: ; */
+  color: #0a0a0a;
+  font-family: "HK-Grotesk-Medium", serif;
 }
 
 .item__link {

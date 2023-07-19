@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.nav {
+  margin-left: 116px;
+}
+
 .nav-item {
   margin-left: 16px;
   margin-right: 16px;
@@ -46,6 +50,7 @@
 
 .header-desktop .nav-list {
   align-items: center;
+  margin-left: 55px;
 }
 
 .header-desktop .logo-container {
