@@ -55,11 +55,15 @@ function domLoad() {
     videoWrap = document.querySelector(".video-wrap"),
     videoEl = videoWrap.querySelector("video"),
     playCtrl = document.querySelector(".action--play"),
-    closeCtrl = document.querySelector(".action--close");
+    closeCtrl = document.querySelector(".action--close"),
+    continueButton = document.querySelector(".video-continue"),
+    pauseButton = document.querySelector(".video-pause");
 
   function init() {
     console.log("Hello2");
     playCtrl.addEventListener("click", play);
+    continueButton.addEventListener("click", continueVideo);
+    pauseButton.addEventListener("click", pause);
     closeCtrl.addEventListener("click", hide);
     videoEl.addEventListener("canplay", allowPlay);
     videoEl.addEventListener("ended", hide);
@@ -78,6 +82,19 @@ function domLoad() {
     setTimeout(function () {
       videoEl.play();
     }, 600);
+  }
+
+  function pause() {
+    pauseButton.style.display = "none";
+    continueButton.style.display = "block";
+
+    videoEl.pause();
+  }
+
+  function continueVideo() {
+    pauseButton.style.display = "block";
+    continueButton.style.display = "none";
+    videoEl.play();
   }
 
   function hide() {

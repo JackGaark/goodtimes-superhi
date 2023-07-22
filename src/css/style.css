@@ -108,6 +108,20 @@ div blockquote {
 .visible {
   opacity: 1;
 }
+
+.video-bar {
+  position: absolute;
+  z-index: 2000;
+  bottom: 0;
+  margin-left: 15px;
+}
+.video-continue {
+  display: none;
+}
+
+.video-pause {
+}
+
 .video-wrap {
   position: fixed;
   z-index: 1000;
