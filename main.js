@@ -58,16 +58,23 @@ function domLoad() {
     closeCtrl = document.querySelector(".action--close"),
     continueButton = document.querySelector(".video-continue"),
     pauseButton = document.querySelector(".video-pause");
+  volumeButton = document.querySelector(".volume");
 
   function init() {
     console.log("Hello2");
     playCtrl.addEventListener("click", play);
     continueButton.addEventListener("click", continueVideo);
     pauseButton.addEventListener("click", pause);
+    volumeButton.addEventListener("click", volume);
     closeCtrl.addEventListener("click", hide);
     videoEl.addEventListener("canplay", allowPlay);
     videoEl.addEventListener("ended", hide);
   }
+
+  //volume
+  volumeButton.addEventListener("mousemove", (e) => {
+    video.volumeButton = e.target.value;
+  });
 
   function allowPlay() {
     console.log("Hello");
